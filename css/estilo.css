@@ -98,6 +98,16 @@ h1, h2, h3{
     background-color: var(--primario);
     color: var(--oscuro);
 }
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+        border: .5rem ;
+    }
+    .boton{
+        width: auto;
+    }
+}
 
 /*Main*/
 .hero{
@@ -124,17 +134,10 @@ h1, h2, h3{
 .contenido-hero h2, .contenido-hero p{
     color: var(--blanco);
 }
-
-@media (min-width: 768px) {
-    .navegacion-principal{
-        flex-direction: row;
-        justify-content: space-between;
-        border: .5rem ;
+/*Servicios*/
+@media (min-width:768px){
+    .servicios{
+        display: grid;/*crear una distribucion de tablas de forma mas amplia y variada*/
+        grid-template-columns: repeat(3, 1fr) ;/*template de las columnas.*//*fr sirve para fraccionar un espacio y repartirlo*/
     }
-    .boton{
-        width: auto;
-    }
-}
-@media (min-width: 480px){
-    
 }
