@@ -185,7 +185,7 @@ h1, h2, h3{
     color: var(--primario);
     text-align: center;
     font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 850;
+    text-transform: uppercase; /*Hace el texto mayuscula*/
+    font-weight: 850; /*Grosor de texto o negrita*/
     margin-bottom: 2rem;
 }
